@@ -1,0 +1,24 @@
+[2021-09-03 22:50:51.413] [remoteagent] [info] 
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+
+[2021-09-03 22:50:51.413] [remoteagent] [info] Extension host agent started.
+[2021-09-03 22:50:51.561] [remoteagent] [info] [::ffff:172.23.240.1][eafdc098][ManagementConnection] New connection established.
+[2021-09-03 22:50:51.568] [remoteagent] [info] [::ffff:172.23.240.1][67a01544][ExtensionHostConnection] New connection established.
+[2021-09-03 22:50:51.577] [remoteagent] [info] [::ffff:172.23.240.1][67a01544][ExtensionHostConnection] <253> Launched Extension Host Process.
+[2021-09-03 22:51:44.861] [remoteagent] [info] [::ffff:172.23.240.1][eafdc098][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2021-09-03 22:51:45.872] [remoteagent] [info] [::ffff:172.23.240.1][67a01544][ExtensionHostConnection] <253> Extension Host Process exited with code: 0, signal: null.
+[2021-09-03 22:51:45.873] [remoteagent] [info] Last EH closed, waiting before shutting down
+[2021-09-03 22:51:46.230] [remoteagent] [info] [::ffff:172.23.240.1][c3f5cf54][ManagementConnection] New connection established.
+[2021-09-03 22:51:46.251] [remoteagent] [info] [::ffff:172.23.240.1][ab564329][ExtensionHostConnection] New connection established.
+[2021-09-03 22:51:46.257] [remoteagent] [info] [::ffff:172.23.240.1][ab564329][ExtensionHostConnection] <266> Launched Extension Host Process.
+[2021-09-03 22:56:45.437] [remoteagent] [info] [::ffff:172.23.240.1][c3f5cf54][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2021-09-03 22:56:45.874] [remoteagent] [info] New EH opened, aborting shutdown
+[2021-09-03 22:56:46.451] [remoteagent] [info] [::ffff:172.23.240.1][ab564329][ExtensionHostConnection] <266> Extension Host Process exited with code: 0, signal: null.
+[2021-09-03 22:56:46.452] [remoteagent] [info] Last EH closed, waiting before shutting down

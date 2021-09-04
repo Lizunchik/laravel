@@ -1,0 +1,28 @@
+[2021-01-31 00:24:35.056] [remoteagent] [info] 
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+
+[2021-01-31 00:24:35.056] [remoteagent] [info] Extension host agent started.
+[2021-01-31 00:24:35.093] [remoteagent] [info] [::ffff:172.17.64.1][1e45a207][ExtensionHostConnection] New connection established.
+[2021-01-31 00:24:35.130] [remoteagent] [info] [::ffff:172.17.64.1][66b86088][ManagementConnection] New connection established.
+[2021-01-31 00:24:35.138] [remoteagent] [info] Listing 0 persistent terminals, 0 total terminals
+[2021-01-31 00:24:35.164] [remoteagent] [info] [::ffff:172.17.64.1][1e45a207][ExtensionHostConnection] <79> Launched Extension Host Process.
+[2021-01-31 00:26:16.579] [remoteagent] [info] [::ffff:172.17.64.1][66b86088][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2021-01-31 00:26:17.591] [remoteagent] [info] [::ffff:172.17.64.1][1e45a207][ExtensionHostConnection] <79> Extension Host Process exited with code: 0, signal: null.
+[2021-01-31 00:26:17.592] [remoteagent] [info] Last EH closed, waiting before shutting down
+[2021-01-31 00:26:17.755] [remoteagent] [info] [::ffff:172.17.64.1][b1aeae49][ManagementConnection] New connection established.
+[2021-01-31 00:26:17.765] [remoteagent] [info] Listing 0 persistent terminals, 0 total terminals
+[2021-01-31 00:26:17.775] [remoteagent] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/lizon/.vscode'
+[2021-01-31 00:26:17.858] [remoteagent] [info] [::ffff:172.17.64.1][698566ed][ExtensionHostConnection] New connection established.
+[2021-01-31 00:26:17.863] [remoteagent] [info] [::ffff:172.17.64.1][698566ed][ExtensionHostConnection] <285> Launched Extension Host Process.
+[2021-01-31 00:31:17.594] [remoteagent] [info] New EH opened, aborting shutdown
+[2021-02-01 17:21:21.028] [remoteagent] [info] [::ffff:172.17.64.1][b1aeae49][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2021-02-01 17:21:27.438] [remoteagent] [info] [::ffff:172.17.64.1][b1aeae49][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[2021-02-01 17:21:27.438] [remoteagent] [info] [::ffff:172.17.64.1][b1aeae49][ManagementConnection] The client has reconnected.
+[2021-02-01 18:04:51.106] [remoteagent] [info] [::ffff:172.17.64.1][b1aeae49][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...

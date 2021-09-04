@@ -1,0 +1,97 @@
+[2021-09-04 11:18:52.072] [exthost] [info] extension host started
+[2021-09-04 11:18:52.095] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-09-04 11:18:52.095] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/lizon/.vscode-server/bin/e7d7e9a9348e6a8cc8c03f877d39cb72e5dfb1ff/extensions/debug-auto-launch/dist/extension
+[2021-09-04 11:18:52.099] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-09-04 11:18:52.099] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/lizon/.vscode-server/bin/e7d7e9a9348e6a8cc8c03f877d39cb72e5dfb1ff/extensions/git/dist/main
+[2021-09-04 11:18:52.166] [exthost] [info] Lock '/home/lizon/.vscode-server/data/User/workspaceStorage/daf6f274ccc582e147915d7877d74ae9/vscode.lock': Lock acquired.
+[2021-09-04 11:18:52.216] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-09-04 11:18:52.217] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/lizon/.vscode-server/bin/e7d7e9a9348e6a8cc8c03f877d39cb72e5dfb1ff/extensions/github/dist/extension.js
+[2021-09-04 11:18:52.252] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"onStartupFinished"}
+[2021-09-04 11:18:52.253] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/lizon/.vscode-server/bin/e7d7e9a9348e6a8cc8c03f877d39cb72e5dfb1ff/extensions/emmet/dist/node/emmetNodeMain
+[2021-09-04 11:18:52.267] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":false,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"onStartupFinished"}
+[2021-09-04 11:18:52.267] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/lizon/.vscode-server/bin/e7d7e9a9348e6a8cc8c03f877d39cb72e5dfb1ff/extensions/merge-conflict/dist/mergeConflictMain
+[2021-09-04 11:18:52.271] [exthost] [info] eager extensions activated
+[2021-09-04 11:18:52.271] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2021-09-04 11:18:52.271] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/lizon/.vscode-server/bin/e7d7e9a9348e6a8cc8c03f877d39cb72e5dfb1ff/extensions/ms-vscode.js-debug/src/extension.js
+[2021-09-04 11:19:11.123] [exthost] [info] ExtensionService#_doActivateExtension vscode.php-language-features {"startup":false,"extensionId":{"value":"vscode.php-language-features","_lower":"vscode.php-language-features"},"activationEvent":"onLanguage:php"}
+[2021-09-04 11:19:11.124] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/lizon/.vscode-server/bin/e7d7e9a9348e6a8cc8c03f877d39cb72e5dfb1ff/extensions/php-language-features/dist/phpMain
+[2021-09-04 11:57:38.247] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1534
+[2021-09-04 11:57:41.658] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1534
+[2021-09-04 11:57:46.720] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1534
+[2021-09-04 11:57:55.730] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:58:11.686] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:58:16.747] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:58:23.127] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:58:28.191] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:58:33.973] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:58:39.427] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:58:44.492] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:58:49.556] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:58:54.619] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:58:59.688] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:59:04.758] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:59:09.832] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:59:14.905] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:59:19.981] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:59:25.902] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:59:43.526] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:44.050] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/lizon/laravel-app/bootstrap' is in submodule 'laravel-app'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2021-09-04 11:59:48.610] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:59:53.677] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 11:59:59.266] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 12:00:04.334] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 12:00:09.400] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 12:00:14.458] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 12:00:19.516] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 12:00:27.058] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 12:00:38.967] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 12:00:44.027] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 12:00:49.085] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1535
+[2021-09-04 12:00:54.144] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
+[2021-09-04 12:00:59.205] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
+[2021-09-04 12:01:05.088] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
+[2021-09-04 12:01:10.154] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
+[2021-09-04 12:01:26.177] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
+[2021-09-04 12:01:31.245] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
+[2021-09-04 12:01:38.327] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
+[2021-09-04 12:01:43.384] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
+[2021-09-04 12:01:50.453] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
+[2021-09-04 12:01:55.514] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
+[2021-09-04 12:02:00.573] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
+[2021-09-04 12:02:05.635] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
+[2021-09-04 12:02:10.703] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
+[2021-09-04 12:02:49.439] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
+[2021-09-04 12:02:54.495] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
+[2021-09-04 12:02:59.553] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
+[2021-09-04 12:03:04.611] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
+[2021-09-04 12:03:09.673] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1516
