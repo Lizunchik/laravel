@@ -1,7 +1,10 @@
+  
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\Admin\CategoryController as AdminCategoryController;
+use App\Http\Controllers\Admin\NewsController as AdminNewsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,18 +17,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	return view('welcome');
 });
-Route::get('/name/{name}', function (string $name) {
-    return "Hello, {$name}";
-});
-Route::get('/project/info', function () {
-    return "Новостной сайт";
-});
-Route::get('/news', function () {
-    $news = [
-        "news1" => "content1",
-        "news2" => "content2"
-    ];
-    return $news;
-});
+Route::get('/main', [NewsController::class, 'main'])
+	->name('news');
+
+
+Route::get('/news', [NewsController::class, 'index'])
+	->name('news');
+Route::get('/news/{id}', [NewsController::class, 'show'])
+	->where('id', '\d+')
+	->name('news.show');
+
+Route::get('news/category', [NewsController::class, 'showCategory'])
+	->name('news.category');
+
+Route::get('/news/category/{id}', [NewsController::class, 'showNewsByCategory'])
+	->where('id', '\d+')
+	->name('news.showNewsByCategory');
