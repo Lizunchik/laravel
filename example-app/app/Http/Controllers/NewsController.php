@@ -12,12 +12,6 @@ class NewsController extends Controller
 			'newsList' => $this->getNews()
 		]);
 	}
-	public function main()
-	{
-		return view('news.main', [
-			'newsList' => $this->getNews()
-		]);
-	}
 
 	public function show(int $id)
 	{
@@ -25,17 +19,7 @@ class NewsController extends Controller
 			'id' => $id
 		]);
 	}
-	
-
-	public function showNewsByCategory(int $id){
-		return view('news.showNewsByCategory', [
-			'newsList' => $this->getNewsByCategory($id)
-		]);
-	}
-
-	public function showCategory(){
-		return view('news.category', [
-			'categoryList' => $this->getNewsByCategories()
-		]);
-	}
+	public function getData(){
+		return view('news.data');
+	  }
 }
