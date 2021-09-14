@@ -388,3 +388,46 @@ service mysql stop
 mysql stop
 mysqld stop
 sudo service mysql stop
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Lizunchik/laravel.git
+git push -u origin main
+git push
+git push --set-upstream origin master
+git init
+git add .
+git commit -m 'initial'
+git branch -M main
+git remote add origin https://github.com/Lizunchik/laravel.git
+git push
+git push --set-upstream origin master
+git push origin master
+git status
+git add .
+git commit -m 'initial'
+git config --global user.email "r.mahotkina@gmail.com"
+git commit -m 'initial'
+git config --global user.name "Lizunchik"
+git commit -m 'initial'
+git push
+git push --set-upstream origin master
+git status
+php artisan make:controller NewsController
+sudo apt install php7.4-cli
+php artisan make:controller NewsController
+php artisan serve
+$HOME/.config/composer/vendor/bin
+$HOME/.composer/vendor/bin
+php artisan list
+cd example-app
+php artisan
+sudo apt-get update
+sudo apt install php-xml
+sudo apt-get install php-mbstring
+composer update
+cd example-app
+sudo apt-get install php-curl
+php artisan
+php artisan make:controller NewsController
