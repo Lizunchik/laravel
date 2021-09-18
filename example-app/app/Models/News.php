@@ -4,25 +4,32 @@ namespace App\Models;
 
 use Faker\Factory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 
 class News extends Model
 {
-   public static function getNews(): array
-   {
-	   $faker = Factory::create('ru_RU');
-	   $data = [];
-	   $countNumber = mt_rand(5,15);
-	   for($i=0; $i<$countNumber; $i++) {
-		   $data[] = [
-			   'id' => $i+1,
-			   'title' => $faker->jobTitle(),
-			   'description' => "<strong>" . $faker->sentence(3) . "</strong>",
-			   'author' => $faker->name(),
-			   'created_at' => now()
-		   ];
-	   }
-       
+   protected $table = "news";
 
-	   return $data;
+   public function getNews(): Collection
+   {
+
+	   return DB::table($this->table)
+		   ->join('categories', 'categories.id', '=', 'news.category_id')
+		   ->select("news.*","categories.id as categoryId","categories.title as categoryTitle")
+		   ->whereBetween('news.id', [1,5])
+		   /*->where([
+			   ['news.id', '>', 6],
+			   ['categories.id', '<', 2]
+		   ])*/
+
+		//   ->orWhere('news.title', 'like', '%'.request()->get('query').'%')
+		   ->orderBy('news.id', 'desc')
+		   ->get();
+   }
+
+   public function getNewsById($id)
+   {
+	   return DB::table($this->table)->find($id);
    }
 }
