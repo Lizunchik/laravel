@@ -4,21 +4,21 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Category extends Model
 {
     use HasFactory;
 
 	protected $table = "categories";
+	protected $guarded = [
+		'id'
+	];
 
-	public function getCategories()
+
+	public function news(): HasMany
 	{
-		return DB::table($this->table)->get();
+		return $this->hasMany(News::class, 'category_id', 'id');
 	}
 
-	public function getCategoryById(int $id)
-	{
-       return DB::table($this->table)->find($id);
-	}
 }

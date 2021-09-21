@@ -4,32 +4,20 @@ namespace App\Models;
 
 use Faker\Factory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\DB;
 
 class News extends Model
 {
    protected $table = "news";
 
-   public function getNews(): Collection
+
+   protected $fillable = [
+	   'category_id', 'title', 'author', 'description'
+   ];
+
+   public function category(): BelongsTo
    {
-
-	   return DB::table($this->table)
-		   ->join('categories', 'categories.id', '=', 'news.category_id')
-		   ->select("news.*","categories.id as categoryId","categories.title as categoryTitle")
-		   ->whereBetween('news.id', [1,5])
-		   /*->where([
-			   ['news.id', '>', 6],
-			   ['categories.id', '<', 2]
-		   ])*/
-
-		//   ->orWhere('news.title', 'like', '%'.request()->get('query').'%')
-		   ->orderBy('news.id', 'desc')
-		   ->get();
-   }
-
-   public function getNewsById($id)
-   {
-	   return DB::table($this->table)->find($id);
+	   return $this->belongsTo(Category::class, 'category_id', 'id');
    }
 }

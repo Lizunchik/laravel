@@ -9,25 +9,34 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            @if($errors->any())
-                @foreach($errors->all() as $error)
-                    <div class="alert alert-danger">{{ $error }}</div>
-                @endforeach
-            @endif
-            <form method="post" action="{{ route('admin.news.store') }}">
+            @include('inc.messages')
+
+
+
+            <form method="post" action="{{ route('admin.news.update', ['news' => $news]) }}">
                 @csrf
+                @method('put')
                 <div class="form-group">
-                    <label for="title">Заголовок новости</label>
-                    <input type="text" class="form-control" name="title" id="title" value="{{ old('title') || 'old' }}">
+                    <label for="category_id">Категория</label>
+                    <select class="form-control" name="category_id">
+                        @foreach($categories as $category)
+                            <option value="{{ $category->id }}"
+                                    @if($news->category_id === $category->id) selected @endif>{{ $category->title }}</option>
+                        @endforeach
+                    </select>
                 </div>
                 <div class="form-group">
-                    <label for="author">Автор новости</label>
-                    <input type="text" class="form-control" name="author" id="author" value="{{ old('author') }}">
+                    <label for="title">Заголовок</label>
+                    <input type="text" class="form-control" name="title" id="title" value="{{ $news->title }}">
+                </div>
+                <div class="form-group">
+                    <label for="author">Автор</label>
+                    <input type="text" class="form-control" name="author" id="author" value="{{ $news->author }}">
                 </div>
 
                 <div class="form-group">
-                    <label for="description">Описание новости</label>
-                    <textarea class="form-control" name="description" id="description">{!! old('description') !!}</textarea>
+                    <label for="description">Описание</label>
+                    <textarea class="form-control" name="description" id="description">{!! $news->description !!}</textarea>
                 </div>
                 <br>
                 <button type="submit" class="btn btn-success">Сохранить</button>

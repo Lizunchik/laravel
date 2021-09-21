@@ -30,7 +30,7 @@
 			 <td>{!! $news['description']  !!}</td>
 			 <td>{{ now()->format('d-m-Y H:i') }}</td>
 			 <td>
-				  <a href="{{ route('news.edit', ['id' => $news['id']]) }}">Ред.</a>
+			 <a href="{{ route('admin.news.edit', ['news' => $news->id]) }}">Ред.</a>
 				  &nbsp;
 				  <a href="">Уд.</a>
 			 </td>

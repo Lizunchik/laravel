@@ -20,25 +20,23 @@ Route::get('/', function () {
 });
 
 //admin
-Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
-    Route::resource('categories', AdminCategoryController::class);
-    Route::resource('news', AdminNewsController::class);
+Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
+   Route::resource('categories', AdminCategoryController::class);
+   Route::resource('news', AdminNewsController::class);
 });
+
+
+
 
 //news
 Route::get('/news', [NewsController::class, 'index'])
-    ->name('news');
+	->name('news');
 Route::get('/news/{id}', [NewsController::class, 'show'])
-    ->where('id', '\d+')
-    ->name('news.show');
+	->where('id', '\d+')
+	->name('news.show');
 
+Route::get('/collections', function() {
+	$collect = collect([1,3,6,7,2,8,9,3,23,68,11,6]);
 
-
-
-Route::get('admin/news/edit/{id}', [AdminNewsController::class, 'edit'])
-    ->where('id', '\d+')
-    ->name('news.edit');
-
-Route::get('news/data', [NewsController::class, 'getData'])
-    ->where('id', '\d+')
-    ->name('news.data');
+	dump($collect->shuffle()->map(fn($item) => $item + 2)->toJson());
+});
