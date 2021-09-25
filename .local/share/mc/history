@@ -40,3 +40,13 @@
 15=/home/lizon/example-app
 16=/home/lizon/laravel-app
 17=/home/lizon
+
+[input-def]
+0=*
+
+[input2]
+0=/home/lizon/example-app/database/migrations/
+1=/home/lizon/
+
+[mc.shared.search]
+0=root

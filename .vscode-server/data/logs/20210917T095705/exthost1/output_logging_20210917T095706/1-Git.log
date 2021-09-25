@@ -1,0 +1,9 @@
+Проверка найденного git в:git
+Используется git 2.25.1 из git
+> git rev-parse --git-dir
+Open repository: /home/lizon
+> git status -z -u
+> git check-ignore -v -z --stdin
+Opening repository for path='/home/lizon' failed; ex=Canceled: Canceled
+Open repository: /home/lizon
+Opening repository for path='/home/lizon/example-app/database/migrations' failed; ex=Canceled: Canceled

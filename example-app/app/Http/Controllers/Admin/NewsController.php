@@ -3,16 +3,19 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\NewsCreateRequest;
+use App\Http\Requests\NewsUpdateRequest;
 use App\Models\Category;
 use App\Models\News;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class NewsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function index()
     {
@@ -45,24 +48,18 @@ class NewsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse
 	 */
-    public function store(Request $request)
+    public function store(NewsCreateRequest $request)
     {
-		$request->validate([
-			'title' => ['required', 'string', 'min:3']
-		]);
-
-        $news = News::create(
-			$request->only(['category_id', 'title', 'author', 'description'])
-		);
+        $news = News::create($request->validated());
 
 		if( $news ) {
 			return redirect()
 				->route('admin.news.index')
-				->with('success', 'Запись успешно добавлена');
+				->with('success', __('messages.admin.news.create.success'));
 		}
 
 		return back()
-			->with('error', 'Запись не добавлена')
+			->with('error', __('messages.admin.news.create.fail'))
 			->withInput();
     }
 
@@ -81,7 +78,7 @@ class NewsController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function edit(News $news)
     {
@@ -92,31 +89,24 @@ class NewsController extends Controller
 		]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\RedirectResponse
+	/**
+	 * Update the specified resource in storage.
+	 *
+	 * @param NewsUpdateRequest $request
+	 * @param News $news
+	 * @return \Illuminate\Http\RedirectResponse
 	 */
-    public function update(Request $request, News $news)
+    public function update(NewsUpdateRequest $request, News $news)
     {
-		$request->validate([
-			'title' => ['required', 'string', 'min:3']
-		]);
-
-        $news = $news->fill(
-			$request->only(['category_id', 'title', 'author', 'description'])
-		)->save();
-
+        $news = $news->fill($request->validated())->save();
 		if( $news ) {
 			return redirect()
 				->route('admin.news.index')
-				->with('success', 'Запись успешно обновлена');
+				->with('success', __('messages.admin.news.update.success'));
 		}
 
 		return back()
-			->with('error', 'Запись не обновлена')
+			->with('error', __('messages.admin.news.update.fail'))
 			->withInput();
     }
 
@@ -124,10 +114,19 @@ class NewsController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(News $news)
+     * @return \Illuminate\Http\JsonResponse
+	 */
+    public function destroy(Request $request, News $news)
     {
-        //
+	  if($request->ajax()) {
+		  try {
+			  $news->delete();
+			  return response()->json(['message' => 'ok']);
+
+		  } catch (\Exception $e) {
+			  Log::error("Error delete news" . PHP_EOL, [$e]);
+			  return response()->json(['message' => 'error'], 400);
+		  }
+	  }
     }
 }

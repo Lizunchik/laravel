@@ -431,3 +431,75 @@ cd example-app
 sudo apt-get install php-curl
 php artisan
 php artisan make:controller NewsController
+git status
+git add .
+git commit -m 'lesson2'
+git push
+git branch
+git push --set-upstream origin lesson1
+git status
+git add .
+git commit -m 'change branch'
+git status
+git add .
+git commit -m 'change branch'
+git status
+composer require barryvdh/laravel-debugbar --dev
+php artisan make:controller DataController
+cd example-app
+php artisan make:controller DataController
+cd example-app
+./vendor/bin/phpunit
+php artisan make:test NewsTest
+./vendor/bin/phpunit
+git add .
+git commit -m 'lesson4'
+git push
+git add .
+git commit -m 'lesson3,4'
+git push
+                                                                                                                                                                                                                                                                                              cd example-app
+php artisan migrate
+sudo service nginx restart
+sudo service php7.0-fpm restart
+sudo service php7.4-fpm restart
+sudo apt-get update
+sudo apt-get upgrade
+sudo dpkg -l | grep "GNU C Library" | awk '{print $3}'
+php artisan migrate
+docker ps
+docker exec -it 89220f3828a9 bash
+mc
+chown -R lizon:lizon /home/lizon/example-app/database/migrations/
+ещз
+top
+htop
+php artisan
+chown -R lizon:lizon /home/lizon/example-app/
+php -v
+docker ps
+docker exec -it 89220f3828a9 bash
+cd example-app
+sudo find /home/lizon/example-app/database/migrations/ -type d -user root -exec sudo chown -R $USER: {} +~
+docker exec -it 89220f3828a9 bash
+$ sudo find /home/lizon/example-app/database/migrations/ -type d -user root -exec sudo chown -R $USER: {} +~
+sudo find /home/lizon/example-app/database/migrations/ -type d -user root -exec sudo chown -R $USER: {} +~
+sudo npm install -g --unsafe-perm=true --allow-root
+docker exec -it 89220f3828a9 bash
+cd example-app
+php artisan db:seed --class=NewsSeeder
+
+docker exec -it 89220f3828a9 bash
+git add .
+git commit -m 'lesson5'
+git push
+cd example-app
+composer require barryvdh/laravel-debugbar –dev
+composer require barryvdh/laravel-debugbar
+docker exec -it 89220f3828a9 bash
+cd example-app
+git commit -m 'lesson6'
+git add .
+git commit -m 'lesson6'
+git push
+git branch

@@ -1,0 +1,51 @@
+{
+	"name": "save-as-root",
+	"displayName": "Save as Root in Remote - SSH",
+	"description": "Edit configuration files with root privileges during using the Remote - SSH extension",
+	"version": "1.3.8",
+	"publisher": "yy0931",
+	"engines": {
+		"vscode": "^1.57.0"
+	},
+	"repository": {
+		"url": "https://github.com/yy0931/save-as-root",
+		"type": "git"
+	},
+	"bugs": {
+		"url": "https://github.com/yy0931/save-as-root/issues"
+	},
+	"icon": "icon.png",
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:save-as-root.saveFile"
+	],
+	"keywords": [
+		"remote",
+		"ssh",
+		"root",
+		"sudo"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "save-as-root.saveFile",
+				"title": "Save as Root"
+			}
+		]
+	},
+	"capabilities": {
+		"virtualWorkspaces": false,
+		"untrustedWorkspaces": {
+			"supported": true
+		}
+	},
+	"__metadata": {
+		"id": "948b6d63-352d-4c3e-9864-b7e3a9aa6163",
+		"publisherId": "5c69fe58-fcf2-4e13-bf3c-03e7ff601540",
+		"publisherDisplayName": "yy0931",
+		"installedTimestamp": 1631978226152
+	}
+}
