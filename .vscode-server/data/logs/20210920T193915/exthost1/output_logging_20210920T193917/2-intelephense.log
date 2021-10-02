@@ -1,0 +1,32 @@
+[Info  - 7:39:17 PM] Initialising intelephense 1.7.1
+[Info  - 7:39:18 PM] Reading state from /home/lizon/.vscode-server/data/User/workspaceStorage/daf6f274ccc582e147915d7877d74ae9/bmewburn.vscode-intelephense-client/1d401cc.
+[Info  - 7:39:18 PM] Initialised in 1305 ms
+[Warn  - 7:39:20 PM] file:///home/lizon/example-app/vendor/fakerphp/faker/src/Faker/Provider/nl_BE/Text.php is over the maximum file size of 1000000 bytes.
+[Info  - 7:39:20 PM] Indexing started.
+[Info  - 7:39:20 PM] Indexing ended. 18 files indexed in 0s.
+[Info  - 7:39:20 PM] Writing state to /home/lizon/.vscode-server/data/User/workspaceStorage/daf6f274ccc582e147915d7877d74ae9/bmewburn.vscode-intelephense-client/1d401cc.
+[Info  - 7:39:21 PM] Wrote state in 0.7s.
+[Info  - 7:39:53 PM] Indexing started.
+[Info  - 7:39:53 PM] Indexing ended. 113 files indexed in 0s.
+[Info  - 7:39:55 PM] Indexing started.
+[Info  - 7:39:55 PM] Indexing ended. 6 files indexed in 0s.
+[Info  - 7:56:35 PM] Indexing started.
+[Info  - 7:56:35 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 8:02:17 PM] Indexing started.
+[Info  - 8:02:17 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 8:12:44 PM] Indexing started.
+[Info  - 8:12:45 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 8:24:57 PM] Indexing started.
+[Info  - 8:24:57 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 8:25:30 PM] Indexing started.
+[Info  - 8:25:30 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 8:26:07 PM] Indexing started.
+[Info  - 8:26:07 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 8:26:44 PM] Indexing started.
+[Info  - 8:26:44 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 8:36:28 PM] Indexing started.
+[Info  - 8:36:28 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 8:36:31 PM] Indexing started.
+[Info  - 8:36:31 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 8:38:39 PM] Indexing started.
+[Info  - 8:38:39 PM] Indexing ended. 1 files indexed in 0s.

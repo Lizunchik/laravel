@@ -4,25 +4,20 @@ namespace App\Models;
 
 use Faker\Factory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Collection;
 
 class News extends Model
 {
-   public static function getNews(): array
-   {
-	   $faker = Factory::create('ru_RU');
-	   $data = [];
-	   $countNumber = mt_rand(5,15);
-	   for($i=0; $i<$countNumber; $i++) {
-		   $data[] = [
-			   'id' => $i+1,
-			   'title' => $faker->jobTitle(),
-			   'description' => "<strong>" . $faker->sentence(3) . "</strong>",
-			   'author' => $faker->name(),
-			   'created_at' => now()
-		   ];
-	   }
-       
+   protected $table = "news";
 
-	   return $data;
+
+   protected $fillable = [
+	   'category_id', 'title', 'author', 'description'
+   ];
+
+   public function category(): BelongsTo
+   {
+	   return $this->belongsTo(Category::class, 'category_id', 'id');
    }
 }
