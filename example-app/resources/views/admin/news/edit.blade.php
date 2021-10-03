@@ -13,7 +13,7 @@
 
 
 
-            <form method="post" action="{{ route('admin.news.update', ['news' => $news]) }}">
+            <form method="post" action="{{ route('admin.news.update', ['news' => $news]) }}" enctype="multipart/form-data">
                 @csrf
                 @method('put')
                 <div class="form-group">
@@ -35,7 +35,10 @@
                     <input type="text" class="form-control" name="author" id="author" value="{{ $news->author }}">
                     @error('author') <div style="color:red;">{{ $message }}</div> @enderror
                 </div>
-
+                <div class="form-group">
+                    <label for="image">Изображение</label>
+                    <input class="form-control" name="image" id="image" type="file">
+                </div>
                 <div class="form-group">
                     <label for="description">Описание</label>
                     <textarea class="form-control" name="description" id="description">{!! $news->description !!}</textarea>
