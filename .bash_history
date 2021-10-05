@@ -503,3 +503,60 @@ git add .
 git commit -m 'lesson6'
 git push
 git branch
+cd example-app
+php artisan make:request NewsCreateRequest
+php artisan make:request NewsUpdateRequest
+git add .
+cd example-app
+git add .
+git commit -m 'lesson7'
+git push
+cd example-app
+composer require laravel/ui --dev
+php artisan ui vue --auth
+npm install && npm run dev
+php artisan ui bootstrap --auth
+cd example-app
+php artisan:migrate
+php artisan migrate:fresh
+docker exec -it 89220f3828a9 bash
+cd example-app
+php artisan make:controller Account/IndexController -i
+php artisan make:controller Admin/IndexController -i
+php artisan make:migration add_is_admin_field_in_users_table --table=users
+php artisan migrate
+docker exec -it 89220f3828a9 bash
+php artisan make:middleware AdminStatus
+php artisan make:controller Admin/RolesController --resource
+cd example-app
+php artisan db:seed --class=CategorySeeder
+docker exec -it 89220f3828a9 bash
+cd example-app
+composer require "orchestra/parser=^4.0"
+php artisan make:event UserEvent
+php arttisan make:migration add_last_login_at_field_in_users_table --table=users
+php artisan make:migration add_last_login_at_field_in_users_table --table=users
+cd example-app
+php artisan make:listener LastLoginUpdateListener
+composer require "orchestra/parser"
+php artisan make:controller Admin/ParserController -i
+composer require socialiteproviders/vkontakte
+php artisan make:controller SocialController
+php artisan make:migration add_avatar_field_in_user_table --table=user
+docker exec -it 89220f3828a9 bash
+php artisan db:seed --class=CategorySeed
+docker exec -it 89220f3828a9 bash
+git add .
+git commit -m 'lessons 8,9'
+git push
+cd example-app
+php artisan storage:link
+git add .
+git commit -m 'lesson 10'
+git push
+cd example-app
+php artisan queue:table
+docker exec -it 89220f3828a9 bash
+php artisan make:job NewsJob
+php artisan queue:work
+docker exec -it 89220f3828a9 bash

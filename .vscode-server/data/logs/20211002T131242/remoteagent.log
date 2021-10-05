@@ -1,0 +1,23 @@
+[2021-10-02 13:12:42.634] [remoteagent] [info] 
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+
+[2021-10-02 13:12:42.634] [remoteagent] [info] Extension host agent started.
+[2021-10-02 13:12:42.768] [remoteagent] [info] [::ffff:172.19.240.1][bb823f0b][ManagementConnection] New connection established.
+[2021-10-02 13:12:42.775] [remoteagent] [info] [::ffff:172.19.240.1][b368ab47][ExtensionHostConnection] New connection established.
+[2021-10-02 13:12:43.006] [remoteagent] [info] [::ffff:172.19.240.1][b368ab47][ExtensionHostConnection] <258> Launched Extension Host Process.
+[2021-10-02 15:27:10.042] [remoteagent] [info] Installing extension: wraith13.clairvoyant
+[2021-10-02 15:27:12.802] [remoteagent] [info] Downloaded extension: wraith13.clairvoyant /home/lizon/.vscode-server/data/CachedExtensionVSIXs/wraith13.clairvoyant-7.4.0
+[2021-10-02 15:27:12.941] [remoteagent] [info] Extracted extension to /home/lizon/.vscode-server/extensions/.abc7e083-8703-430a-bcbe-d08d9580c6e0: wraith13.clairvoyant
+[2021-10-02 15:27:12.946] [remoteagent] [info] Renamed to /home/lizon/.vscode-server/extensions/wraith13.clairvoyant-7.4.0
+[2021-10-02 15:27:12.948] [remoteagent] [info] Extracting completed. wraith13.clairvoyant
+[2021-10-02 15:27:12.951] [remoteagent] [info] Extension installed successfully: wraith13.clairvoyant
+[2021-10-02 17:05:26.987] [remoteagent] [info] [::ffff:172.19.240.1][bb823f0b][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2021-10-02 17:05:28.013] [remoteagent] [info] [::ffff:172.19.240.1][b368ab47][ExtensionHostConnection] <258> Extension Host Process exited with code: 0, signal: null.
+[2021-10-02 17:05:28.014] [remoteagent] [info] Last EH closed, waiting before shutting down

@@ -1,0 +1,14 @@
+[Info  - 9:07:29 AM] Initialising intelephense 1.7.1
+[Info  - 9:07:29 AM] Reading state from /home/lizon/.vscode-server/data/User/workspaceStorage/daf6f274ccc582e147915d7877d74ae9/bmewburn.vscode-intelephense-client/1d401cc.
+[Info  - 9:07:29 AM] Initialised in 875 ms
+[Warn  - 9:07:30 AM] file:///home/lizon/example-app/vendor/fakerphp/faker/src/Faker/Provider/nl_BE/Text.php is over the maximum file size of 1000000 bytes.
+[Info  - 9:07:30 AM] Indexing started.
+[Info  - 9:07:30 AM] Indexing ended. 5 files indexed in 0s.
+[Info  - 9:07:30 AM] Writing state to /home/lizon/.vscode-server/data/User/workspaceStorage/daf6f274ccc582e147915d7877d74ae9/bmewburn.vscode-intelephense-client/1d401cc.
+[Info  - 9:07:31 AM] Wrote state in 0.8s.
+[Info  - 9:16:58 AM] Indexing started.
+[Info  - 9:16:58 AM] Indexing ended. 1 files indexed in 0s.
+[Info  - 9:18:02 AM] Indexing started.
+[Info  - 9:18:02 AM] Indexing ended. 1 files indexed in 0s.
+[Info  - 9:19:58 AM] Indexing started.
+[Info  - 9:19:59 AM] Indexing ended. 1 files indexed in 0s.

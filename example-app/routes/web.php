@@ -40,6 +40,7 @@ Route::group(['middleware' => 'auth'], function () {
 		Route::resource('categories', AdminCategoryController::class);
 		Route::resource('news', AdminNewsController::class);
 		Route::resource('roles', AdminRolesController::class);
+		Route::resource('resources', App\Http\Controllers\Admin\ResourcesController::class);
 
 		Route::get('/parser', App\Http\Controllers\Admin\ParserController::class)
 			->name('parser');

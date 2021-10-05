@@ -1,0 +1,451 @@
+{
+    "name": "clairvoyant",
+    "displayName": "Clairvoyant",
+    "description": "Smart search your codes.",
+    "icon": "images/clairvoyanthex.128.png",
+    "version": "7.4.0",
+    "publisher": "wraith13",
+    "license": "SEE LICENSE IN LICENSE_1_0.txt",
+    "engines": {
+        "vscode": "^1.39.0"
+    },
+    "bugs": {
+        "url": "https://github.com/wraith13/clairvoyant-vscode/issues"
+    },
+    "homepage": "https://github.com/wraith13/clairvoyant-vscode",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wraith13/clairvoyant-vscode.git"
+    },
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "search",
+        "token",
+        "identifier",
+        "highlight",
+        "updates",
+        "problems"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/source/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "clairvoyant.scanDocument",
+                "title": "%clairvoyant.scanDocument.title%",
+                "category": "Clairvoyant"
+            },
+            {
+                "command": "clairvoyant.scanOpenDocuments",
+                "title": "%clairvoyant.scanOpenDocuments.title%",
+                "category": "Clairvoyant"
+            },
+            {
+                "command": "clairvoyant.scanWorkspace",
+                "title": "%clairvoyant.scanWorkspace.title%",
+                "category": "Clairvoyant"
+            },
+            {
+                "command": "clairvoyant.sight",
+                "title": "%clairvoyant.sight.title%",
+                "category": "Clairvoyant"
+            },
+            {
+                "command": "clairvoyant.sightDocument",
+                "title": "%clairvoyant.sightDocument.title%",
+                "category": "Clairvoyant",
+                "icon": "images/clairvoyanthex.64.png"
+            },
+            {
+                "command": "clairvoyant.sightToken",
+                "title": "%clairvoyant.sightToken.title%",
+                "category": "Clairvoyant"
+            },
+            {
+                "command": "clairvoyant.back",
+                "title": "%clairvoyant.back.title%",
+                "category": "Clairvoyant"
+            },
+            {
+                "command": "clairvoyant.forward",
+                "title": "%clairvoyant.forward.title%",
+                "category": "Clairvoyant"
+            },
+            {
+                "command": "clairvoyant.reload",
+                "title": "%clairvoyant.reload.title%",
+                "category": "Clairvoyant"
+            },
+            {
+                "command": "clairvoyant.reportStatistics",
+                "title": "%clairvoyant.reportStatistics.title%",
+                "category": "Clairvoyant"
+            },
+            {
+                "command": "clairvoyant.reportProfile",
+                "title": "%clairvoyant.reportProfile.title%",
+                "category": "Clairvoyant"
+            },
+            {
+                "command": "clairvoyant.firstToken",
+                "title": "%clairvoyant.firstToken.title%",
+                "category": "Clairvoyant"
+            },
+            {
+                "command": "clairvoyant.nextToken",
+                "title": "%clairvoyant.nextToken.title%",
+                "category": "Clairvoyant"
+            },
+            {
+                "command": "clairvoyant.previousToken",
+                "title": "%clairvoyant.previousToken.title%",
+                "category": "Clairvoyant"
+            },
+            {
+                "command": "clairvoyant.toggleHighlight",
+                "title": "%clairvoyant.toggleHighlight.title%",
+                "category": "Clairvoyant"
+            },
+            {
+                "command": "clairvoyant.lunaticGoToFile",
+                "title": "%clairvoyant.lunaticGoToFile.title%",
+                "category": "Clairvoyant"
+            }
+        ],
+        "menus": {
+            "commandPalette": [
+                {
+                    "command": "clairvoyant.sightDocument",
+                    "when": "isDocumentScanedWithClairvoyant"
+                },
+                {
+                    "command": "clairvoyant.firstToken",
+                    "when": "isDocumentScanedWithClairvoyant"
+                },
+                {
+                    "command": "clairvoyant.nextToken",
+                    "when": "isDocumentScanedWithClairvoyant"
+                },
+                {
+                    "command": "clairvoyant.previousToken",
+                    "when": "isDocumentScanedWithClairvoyant"
+                },
+                {
+                    "command": "clairvoyant.toggleHighlight",
+                    "when": "isDocumentScanedWithClairvoyant"
+                },
+                {
+                    "command": "clairvoyant.sightToken",
+                    "when": "isDocumentScanedWithClairvoyant"
+                },
+                {
+                    "command": "clairvoyant.lunaticGoToFile",
+                    "when": "enableLunaticPreviewWithClairvoyant"
+                }
+            ],
+            "editor/title": [
+                {
+                    "command": "clairvoyant.sightDocument",
+                    "group": "navigation",
+                    "when": "isDocumentScanedWithClairvoyant"
+                }
+            ],
+            "editor/context": [
+                {
+                    "command": "clairvoyant.nextToken",
+                    "group": "Clairvoyant",
+                    "when": "isDocumentScanedWithClairvoyant"
+                },
+                {
+                    "command": "clairvoyant.previousToken",
+                    "group": "Clairvoyant",
+                    "when": "isDocumentScanedWithClairvoyant"
+                },
+                {
+                    "command": "clairvoyant.firstToken",
+                    "group": "Clairvoyant",
+                    "when": "isDocumentScanedWithClairvoyant"
+                },
+                {
+                    "command": "clairvoyant.toggleHighlight",
+                    "group": "Clairvoyant",
+                    "when": "isDocumentScanedWithClairvoyant"
+                },
+                {
+                    "command": "clairvoyant.sightToken",
+                    "group": "Clairvoyant",
+                    "when": "isDocumentScanedWithClairvoyant"
+                }
+            ]
+        },
+        "configuration": [
+            {
+                "title": "Clairvoyant",
+                "properties": {
+                    "clairvoyant.autoScanMode": {
+                        "type": "string",
+                        "default": "open documents",
+                        "enum": [
+                            "none",
+                            "open documents",
+                            "workspace"
+                        ],
+                        "overridable": true,
+                        "description": "%clairvoyant.autoScanMode.description%"
+                    },
+                    "clairvoyant.maxFiles": {
+                        "type": "number",
+                        "default": 1024,
+                        "description": "%clairvoyant.maxFiles.description%"
+                    },
+                    "clairvoyant.showStatusBarItems": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "%clairvoyant.showStatusBarItems.description%"
+                    },
+                    "clairvoyant.textEditorRevealType": {
+                        "type": "string",
+                        "default": "InCenter",
+                        "enum": [
+                            "AtTop",
+                            "Default",
+                            "InCenter",
+                            "InCenterIfOutsideViewport"
+                        ],
+                        "overridable": true,
+                        "description": "%clairvoyant.textEditorRevealType.description%"
+                    },
+                    "clairvoyant.isExcludeStartsWidhDot": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "%clairvoyant.isExcludeStartsWidhDot.description%"
+                    },
+                    "clairvoyant.excludeDirectories": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "default": [
+                            "out",
+                            "bin",
+                            "node_modules"
+                        ],
+                        "description": "%clairvoyant.excludeDirectories.description%"
+                    },
+                    "clairvoyant.excludeExtentions": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "default": [
+                            "package-lock.json",
+                            ".min.js",
+                            ".map",
+                            ".png",
+                            ".jpg",
+                            ".jpeg",
+                            ".gif",
+                            ".bmp",
+                            ".eot",
+                            ".ttf",
+                            ".woff",
+                            ".ico",
+                            ".obj",
+                            ".lib",
+                            ".out",
+                            ".exe",
+                            ".dll",
+                            ".vsix",
+                            ".zip",
+                            ".tar",
+                            ".gz",
+                            ".pkg",
+                            ".ipa",
+                            ".app",
+                            ".pdf",
+                            ".doc",
+                            ".docx",
+                            ".xls",
+                            ".xlsx",
+                            ".wav",
+                            ".mp3",
+                            ".mp4",
+                            ".mov"
+                        ],
+                        "description": "%clairvoyant.excludeExtentions.description%"
+                    },
+                    "clairvoyant.targetProtocols": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "default": [
+                            "file:",
+                            "untitled:"
+                        ],
+                        "description": "%clairvoyant.targetProtocols.description%"
+                    },
+                    "clairvoyant.outputChannelVolume": {
+                        "type": "string",
+                        "default": "regular",
+                        "enum": [
+                            "silent",
+                            "regular",
+                            "verbose"
+                        ],
+                        "overridable": true,
+                        "description": "%clairvoyant.outputChannelVolume.description%"
+                    },
+                    "clairvoyant.parserRegExp": {
+                        "type": "string",
+                        "default": "(\\w+[\\w\\-]*\\w+)|\\w+",
+                        "overridable": true,
+                        "description": "%clairvoyant.parserRegExp.description%"
+                    },
+                    "clairvoyant.enablePreviewIntercept": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "%clairvoyant.enablePreviewIntercept.description%"
+                    },
+                    "clairvoyant.gotoHistoryMode": {
+                        "type": "string",
+                        "default": "by view column",
+                        "enum": [
+                            "single",
+                            "by view column"
+                        ],
+                        "description": "%clairvoyant.gotoHistoryMode.description%"
+                    },
+                    "clairvoyant.highlightMode": {
+                        "type": "string",
+                        "default": "latest",
+                        "enum": [
+                            "none",
+                            "active",
+                            "latest",
+                            "trail"
+                        ],
+                        "description": "%clairvoyant.highlightMode.description%"
+                    },
+                    "clairvoyant.highlightBaseColor": {
+                        "type": "string",
+                        "default": "#5679C9",
+                        "description": "%clairvoyant.highlightBaseColor.description%"
+                    },
+                    "clairvoyant.highlightAlpha": {
+                        "type": "number",
+                        "default": 150,
+                        "minimum": 0,
+                        "maximum": 255,
+                        "description": "%clairvoyant.highlightAlpha.description%"
+                    },
+                    "clairvoyant.activeHighlightAlpha": {
+                        "type": "number",
+                        "default": 210,
+                        "minimum": 0,
+                        "maximum": 255,
+                        "description": "%clairvoyant.activeHighlightAlpha.description%"
+                    },
+                    "clairvoyant.activeHighlightLineAlpha": {
+                        "type": "number",
+                        "default": 90,
+                        "minimum": 0,
+                        "maximum": 255,
+                        "description": "%clairvoyant.activeHighlightLineAlpha.description%"
+                    },
+                    "clairvoyant.latestHighlightAlpha": {
+                        "type": "number",
+                        "default": 180,
+                        "minimum": 0,
+                        "maximum": 255,
+                        "description": "%clairvoyant.latestHighlightAlpha.description%"
+                    },
+                    "clairvoyant.activeHighlightOverviewRulerLane": {
+                        "type": "string",
+                        "default": "full",
+                        "enum": [
+                            "none",
+                            "left",
+                            "center",
+                            "right",
+                            "full"
+                        ],
+                        "description": "%clairvoyant.activeHighlightOverviewRulerLane.description%"
+                    },
+                    "clairvoyant.latestHighlightOverviewRulerLane": {
+                        "type": "string",
+                        "default": "full",
+                        "enum": [
+                            "none",
+                            "left",
+                            "center",
+                            "right",
+                            "full"
+                        ],
+                        "description": "%clairvoyant.latestHighlightOverviewRulerLane.description%"
+                    },
+                    "clairvoyant.highlightOverviewRulerLane": {
+                        "type": "string",
+                        "default": "center",
+                        "enum": [
+                            "none",
+                            "left",
+                            "center",
+                            "right",
+                            "full"
+                        ],
+                        "description": "%clairvoyant.highlightOverviewRulerLane.description%"
+                    },
+                    "clairvoyant.enableLunaticPreview": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "%clairvoyant.enableLunaticPreview.description%"
+                    },
+                    "clairvoyant.developFileListOnSightRootMenu": {
+                        "type": "string",
+                        "default": "none",
+                        "enum": [
+                            "none",
+                            "sight",
+                            "goto"
+                        ],
+                        "description": "%clairvoyant.developFileListOnSightRootMenu.description%"
+                    },
+                    "clairvoyant.enableMenuCache": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "%clairvoyant.enableMenuCache.description%"
+                    }
+                }
+            }
+        ]
+    },
+    "scripts": {
+        "npm:install": "npm install",
+        "vscode:package": "vsce package",
+        "vscode:publish": "vsce publish",
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/glob": "^7.1.1",
+        "@types/mocha": "^5.2.7",
+        "@types/node": "^12.11.7",
+        "@types/vscode": "^1.39.0",
+        "glob": "^7.1.5",
+        "mocha": "^6.2.2",
+        "typescript": "^3.6.4",
+        "tslint": "^5.20.0",
+        "vscode-test": "^1.2.2"
+    },
+    "dependencies": {
+        "phi-colors": "^1.0.1"
+    }
+}

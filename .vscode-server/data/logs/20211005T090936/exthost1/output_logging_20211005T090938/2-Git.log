@@ -1,0 +1,11 @@
+Проверка найденного git в:git
+Используется git 2.25.1 из git
+> git rev-parse --git-dir
+Open repository: /home/lizon
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/lesson1 refs/remotes/lesson1
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+Open repository: /home/lizon

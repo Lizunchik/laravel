@@ -1,0 +1,147 @@
+[2021-10-05 09:09:37.727] [exthost] [info] extension host started
+[2021-10-05 09:09:37.743] [exthost] [info] Lock '/home/lizon/.vscode-server/data/User/workspaceStorage/daf6f274ccc582e147915d7877d74ae9/vscode.lock': Lock acquired.
+[2021-10-05 09:09:37.826] [exthost] [info] ExtensionService#_doActivateExtension vscode.php-language-features {"startup":false,"extensionId":{"value":"vscode.php-language-features","_lower":"vscode.php-language-features"},"activationEvent":"onLanguage:php"}
+[2021-10-05 09:09:37.827] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/extensions/php-language-features/dist/phpMain
+[2021-10-05 09:09:37.846] [exthost] [info] ExtensionService#_doActivateExtension bmewburn.vscode-intelephense-client {"startup":false,"extensionId":{"value":"bmewburn.vscode-intelephense-client","_lower":"bmewburn.vscode-intelephense-client"},"activationEvent":"onLanguage:php"}
+[2021-10-05 09:09:37.847] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/lizon/.vscode-server/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension
+[2021-10-05 09:09:37.889] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-10-05 09:09:37.889] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/extensions/debug-auto-launch/dist/extension
+[2021-10-05 09:09:37.892] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-10-05 09:09:37.893] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/extensions/git/dist/main
+[2021-10-05 09:09:37.982] [exthost] [info] ExtensionService#_doActivateExtension wraith13.clairvoyant {"startup":true,"extensionId":{"value":"wraith13.clairvoyant","_lower":"wraith13.clairvoyant"},"activationEvent":"*"}
+[2021-10-05 09:09:37.982] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/lizon/.vscode-server/extensions/wraith13.clairvoyant-7.4.0/out/source/extension.js
+[2021-10-05 09:09:38.454] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-10-05 09:09:38.454] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/extensions/github/dist/extension.js
+[2021-10-05 09:09:38.623] [exthost] [info] extension host terminating: received terminate message from renderer
+[2021-10-05 09:09:38.625] [exthost] [info] Lock '/home/lizon/.vscode-server/data/User/workspaceStorage/daf6f274ccc582e147915d7877d74ae9/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+[2021-10-05 09:09:38.641] [exthost] [error] TypeError: Cannot read private member from an object whose class did not declare it
+	at ze (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:6779)
+	at Object.dispose (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:87:17897)
+	at o (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:14:4943)
+	at v._deactivate (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:11412)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:9991
+	at Array.map (<anonymous>)
+	at v.deactivateAll (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:9979)
+	at E.terminate (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:103:723)
+	at a (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:113:32208)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:113:30124
+	at c.fire (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at l.fire (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:74:15781)
+	at r._receiveMessage (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:74:21051)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:74:17929
+	at c.fire (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at v.acceptChunk (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:74:13142)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:74:12490
+	at c.fire (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at E._acceptChunk (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:113:19362)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:113:15775
+	at Socket.w (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:113:13350)
+	at Socket.emit (events.js:315:20)
+	at addChunk (internal/streams/readable.js:309:12)
+	at readableAddChunk (internal/streams/readable.js:284:9)
+	at Socket.Readable.push (internal/streams/readable.js:223:10)
+	at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-10-05 09:09:38.646] [exthost] [error] ProxyResolver#resolveProxy Canceled: Canceled
+	at Object.n [as canceled] (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:5:1157)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:98:8805
+	at Array.forEach (<anonymous>)
+	at i.dispose (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:98:8753)
+	at E.terminate (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:103:682)
+	at a (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:113:32208)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:113:30124
+	at c.fire (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at l.fire (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:74:15781)
+	at r._receiveMessage (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:74:21051)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:74:17929
+	at c.fire (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at v.acceptChunk (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:74:13142)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:74:12490
+	at c.fire (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at E._acceptChunk (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:113:19362)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:113:15775
+	at Socket.w (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:113:13350)
+	at Socket.emit (events.js:315:20)
+	at addChunk (internal/streams/readable.js:309:12)
+	at readableAddChunk (internal/streams/readable.js:284:9)
+	at Socket.Readable.push (internal/streams/readable.js:223:10)
+	at TCP.onStreamRead (internal/stream_base_commons.js:188:23) 
+[2021-10-05 09:09:38.669] [exthost] [error] Activating extension vscode.github failed due to an error:
+[2021-10-05 09:09:38.669] [exthost] [error] Canceled: Canceled
+	at Object.n [as canceled] (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:5:1157)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:98:8805
+	at Array.forEach (<anonymous>)
+	at i.dispose (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:98:8753)
+	at E.terminate (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:103:682)
+	at a (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:113:32208)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:113:30124
+	at c.fire (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at l.fire (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:74:15781)
+	at r._receiveMessage (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:74:21051)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:74:17929
+	at c.fire (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at v.acceptChunk (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:74:13142)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:74:12490
+	at c.fire (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at E._acceptChunk (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:113:19362)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:113:15775
+	at Socket.w (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:113:13350)
+	at Socket.emit (events.js:315:20)
+	at addChunk (internal/streams/readable.js:309:12)
+	at readableAddChunk (internal/streams/readable.js:284:9)
+	at Socket.Readable.push (internal/streams/readable.js:223:10)
+	at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-10-05 09:09:38.669] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"onStartupFinished"}
+[2021-10-05 09:09:38.669] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/extensions/emmet/dist/node/emmetNodeMain
+[2021-10-05 09:09:38.694] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":false,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"onStartupFinished"}
+[2021-10-05 09:09:38.694] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/extensions/merge-conflict/dist/mergeConflictMain
+[2021-10-05 09:09:38.705] [exthost] [info] eager extensions activated
+[2021-10-05 09:09:38.705] [exthost] [error] Activating extension vscode.emmet failed due to an error:
+[2021-10-05 09:09:38.705] [exthost] [error] Canceled: Canceled
+	at Object.n [as canceled] (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:5:1157)
+	at i._remoteCall (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:98:13617)
+	at Proxy.O.<computed>.G.charCodeAt.O.<computed> (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:98:10012)
+	at C.getValue (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:95:29468)
+	at new L (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:87:4538)
+	at new I (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:87:5534)
+	at v._loadExtensionContext (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:12950)
+	at v._doActivateExtension (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:12673)
+	at v._activateExtension (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:11695)
+	at Object.actualActivateExtension (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:9236)
+	at c._activateExtension (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:94:87973)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:94:87655
+	at Array.map (<anonymous>)
+	at c._activateExtensions (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:94:87643)
+	at c.activateById (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:94:85273)
+	at v._activateById (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:10238)
+	at v._activateOneStartupFinished (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:15128)
+	at v._activateAllStartupFinished (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:15499)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:15992
+	at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-10-05 09:09:38.706] [exthost] [error] Activating extension vscode.merge-conflict failed due to an error:
+[2021-10-05 09:09:38.706] [exthost] [error] Canceled: Canceled
+	at Object.n [as canceled] (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:5:1157)
+	at i._remoteCall (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:98:13617)
+	at Proxy.O.<computed>.G.charCodeAt.O.<computed> (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:98:10012)
+	at C.getValue (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:95:29468)
+	at new L (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:87:4538)
+	at new I (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:87:5534)
+	at v._loadExtensionContext (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:12950)
+	at v._doActivateExtension (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:12673)
+	at v._activateExtension (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:11695)
+	at Object.actualActivateExtension (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:9236)
+	at c._activateExtension (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:94:87973)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:94:87655
+	at Array.map (<anonymous>)
+	at c._activateExtensions (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:94:87643)
+	at c.activateById (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:94:85273)
+	at v._activateById (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:10238)
+	at v._activateOneStartupFinished (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:15128)
+	at v._activateAllStartupFinished (/home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:15499)
+	at /home/lizon/.vscode-server/bin/7f6ab5485bbc008386c4386d08766667e155244e/out/vs/server/remoteExtensionHostProcess.js:99:15992
+	at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-10-05 09:09:39.064] [exthost] [error] Error: Request shutdown failed with message: Cannot read property 'dispose' of undefined
+	at /home/lizon/.vscode-server/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension.js:1:232595
+	at /home/lizon/.vscode-server/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension.js:1:232889
+	at Immediate.<anonymous> (/home/lizon/.vscode-server/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension.js:1:233254)
+	at processImmediate (internal/timers.js:461:21)
+[2021-10-05 09:09:39.642] [exthost] [info] exiting with code 0
